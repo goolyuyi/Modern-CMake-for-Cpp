@@ -7,3 +7,4 @@ message("PQXX_FOUND: ${PQXX_FOUND}")
 
 add_executable(main main.cpp)
 target_link_libraries(main PRIVATE PkgConfig::PQXX)
+

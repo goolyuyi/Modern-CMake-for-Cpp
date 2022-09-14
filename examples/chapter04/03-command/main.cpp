@@ -3,5 +3,6 @@
 
 int main() {
   std::cout << CONSTANT(It works) << std::endl;
+  ff();
   return 0;
 }

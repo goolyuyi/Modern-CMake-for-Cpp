@@ -3,6 +3,7 @@ project(Features CXX)
 
 list(FIND CMAKE_CXX_COMPILE_FEATURES
           cxx_variable_templates result)
+message("${CMAKE_CXX_COMPILE_FEATURES}")
 if(result EQUAL -1)
   message(FATAL_ERROR "I really need variable templates.")
 endif()

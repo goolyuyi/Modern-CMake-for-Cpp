@@ -1,1 +1,7 @@
 #define CONSTANT(x) #x
+
+#include <iostream>
+
+void inline ff() {
+    std::cout << CONSTANT(ff) << std::endl;
+}

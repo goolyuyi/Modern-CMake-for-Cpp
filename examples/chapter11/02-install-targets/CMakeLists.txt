@@ -7,4 +7,4 @@ install(TARGETS calc
         ARCHIVE
         PUBLIC_HEADER
         DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/calc
-       )
+        )

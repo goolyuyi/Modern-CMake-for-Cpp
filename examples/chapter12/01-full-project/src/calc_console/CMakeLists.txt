@@ -1,4 +1,5 @@
 include(GetFTXUI)
+
 add_library(calc_console_static STATIC tui.cpp)
 target_include_directories(calc_console_static PUBLIC include)
 target_precompile_headers(calc_console_static PUBLIC <string>)

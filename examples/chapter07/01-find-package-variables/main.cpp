@@ -1,14 +1,20 @@
-#include "message.pb.h"
-#include <fstream>
-using namespace std;
-int main()
-{
-  Message m;
-  m.set_id(123);
-  m.PrintDebugString();
+//#include "message.pb.h"
+//#include <fstream>
+#include <pxr/usd/usd/stage.h>
+#include <iostream>
 
-  fstream fo("./hello.data", ios::binary | ios::out);
-  m.SerializeToOstream(&fo);
-  fo.close();
-  return 0;
+using namespace std;
+
+int main() {
+    auto stage = pxr::UsdStage::CreateNew("hello.usda");
+    stage->GetRootLayer()->Save();
+//    Message m;
+//    m.set_id(123);
+//    m.PrintDebugString();
+
+//    fstream fo("./hello.data", ios::binary | ios::out);
+//    m.SerializeToOstream(&fo);
+//    fo.close();
+    cout << "hello" << endl;
+    return 0;
 }

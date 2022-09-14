@@ -2,3 +2,6 @@
 #cmakedefine FOO_STRING1 "@FOO_STRING1@"
 #cmakedefine FOO_STRING2 "${FOO_STRING2}"
 #cmakedefine FOO_UNDEFINED "@FOO_UNDEFINED@"
+
+#define XXX
+#define YU YI

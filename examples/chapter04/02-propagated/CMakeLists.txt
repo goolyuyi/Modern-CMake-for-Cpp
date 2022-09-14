@@ -12,3 +12,4 @@ set_property(TARGET source2 PROPERTY INTERFACE_LIB_VERSION 4)
 
 add_library(destination empty.cpp)
 target_link_libraries(destination source1 source2)
+

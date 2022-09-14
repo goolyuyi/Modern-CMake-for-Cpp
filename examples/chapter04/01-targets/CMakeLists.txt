@@ -10,11 +10,10 @@ target_link_libraries(gui_app calculations drawing)
 add_library(calculations calculations.cpp)
 add_library(drawing drawing.cpp)
 
-add_custom_target(checksum ALL
+add_custom_target(checksum ALL #add to ALL
                   COMMAND sh -c "cksum terminal_app>terminal.ck"
                   COMMAND sh -c "cksum gui_app>gui.ck"
-                  BYPRODUCTS terminal.ck gui.ck 
+                  BYPRODUCTS terminal.ck gui.ck #for clean target
                   COMMENT "Checking the sums..."
 )
-
 add_dependencies(checksum terminal_app gui_app)
